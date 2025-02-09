@@ -1,0 +1,131 @@
+.nav {
+    height: 10vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    /* background: transparent; */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav.scrolled {
+    background-color: black;
+    /* Black background when scrolled */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for effect */
+}
+
+.h-inherit {
+    height: inherit;
+}
+
+.px-1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 700px) {
+    .px-1 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+.font-xl {
+    font-size: x-large;
+    font-family: "Poetsen One", serif;
+    font-weight: bolder;
+}
+
+.font-2xl {
+    font-size: 2rem;
+    font-family: "Poetsen One", serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .width-20 {
+        width: 15rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .hideOnPC {
+        display: none;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 97;
+    /* Below the sidebar but above other content */
+}
+
+.SideBar {
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.SideBar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.SideBar.open {
+    transform: translateX(0);
+    /* Slide in */
+}
+
+.SideBar.closed {
+    transform: translateX(100%);
+    /* Slide out */
+}
+
+.menu-button {
+    transition: transform 0.3s ease;
+    border: none;
+    color: white;
+}
+
+.menu-button.open {
+    transform: rotate(90deg);
+    /* Rotate to form a cross */
+}
+
+.btn {
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    background-color: orange;
+    color: black;
+    font-family: "Poetsen One", serif;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: orange;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-link:focus, .nav-link:active {
+    color: orange;
+}

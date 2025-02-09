@@ -1,0 +1,225 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    /* Ensures the video doesn't overflow the container */
+    display: flex;
+    /* Flexbox layout */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: center;
+}
+
+.background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* Ensures the video covers the container area */
+    z-index: -1;
+    /* Keeps the video in the background */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    /* Ensures content is above the video */
+    color: white;
+    text-align: left;
+    display: flex;
+    gap: 3rem;
+    max-width: 90%;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.left,
+.right {
+    height: 50%;
+    width: 50%;
+}
+
+.left {
+    text-align: center;
+    overflow: hidden;
+}
+
+.right {
+    font-family: Poppins;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    flex-shrink: 5;
+    width: 50%;
+}
+
+@media (max-width: 820px) {
+    .content {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    /* font-family: "Poetsen One", serif; */
+    font-weight: bolder;
+}
+
+.hero {
+    font-family: Poppins;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    padding: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 730px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+.start {
+    width: 60%;
+}
+
+.end {
+    width: 40%;
+}
+
+.end img {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 730px) {
+    .start, .end {
+        width: 100%;
+    }
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.custom-font {
+    font-family: "Poetsen One", serif;
+}
+
+.laptop {
+    width: 20%;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: auto;
+}
+
+.first, .second {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .box-container {
+        flex-wrap: wrap;
+    }
+
+    .first, .second {
+        width: 100%;
+    }
+}
+
+.border {
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.color-gray {
+    color: darkgray;
+}
+
+hr {
+    border-color: white;
+    margin-bottom: 0;
+}
+
+.hero-1 {
+    margin: 0;
+    background-color: black;
+    color: white;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.fs-3 {
+    font-size: 1.5rem;
+}
+
+.fs-5 {
+    font-size: 1.1rem;
+}
+
+.blocks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap !important;
+}
+
+.block1 {
+    width: 30%;
+    min-width: 280px; /* Prevents blocks from shrinking too much */
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 653px) {
+    .block1 {
+        width: 100%;
+    }
+}
+
+.img {
+    width: 100%;
+}
