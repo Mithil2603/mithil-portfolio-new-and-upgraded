@@ -1,6 +1,8 @@
 .container {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 3rem 0;
+    box-sizing: border-box;
     width: 100%;
     overflow: hidden;
     /* Ensures the video doesn't overflow the container */
