@@ -235,6 +235,10 @@ hr {
     .block1 {
         width: 100%;
     }
+
+    .hero-1 h1{
+        font-size: 2.2rem;
+    }
 }
 
 .img {
