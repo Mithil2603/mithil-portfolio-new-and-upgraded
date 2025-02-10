@@ -103,7 +103,7 @@ export default function Navbar() {
         <div className="d-flex flex-direction-col gap-2 w-100 p-3 mt-3">
           <NavLink
             to="/"
-            className="text-decoration-none text-white list-style-none nav-link"
+            className="text-decoration-none text-white list-style-none nav-link mt-1"
             onClick={closeSidebar}
           >
             Home
