@@ -1,5 +1,5 @@
 .nav {
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     /* background-color: blueviolet; */
     /* background: transparent; */
@@ -11,6 +11,10 @@
     /* Black background when scrolled */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     /* Optional shadow for effect */
+}
+
+.min-h-inherit {
+    min-height: inherit;
 }
 
 .h-inherit {
@@ -126,6 +130,7 @@
     color: orange;
 }
 
-.nav-link:focus, .nav-link:active {
+.nav-link:focus,
+.nav-link:active {
     color: orange;
 }

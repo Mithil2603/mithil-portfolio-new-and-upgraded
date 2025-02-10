@@ -35,7 +35,7 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <nav className={navbarClass}>
-        <div className="px-1 d-flex justify-between align-items-center h-inherit">
+        <div className="px-1 d-flex justify-between align-items-center  min-h-inherit">
           {/* Logo */}
           <Link to="/" className="text-white text-decoration-none">
             <span className="logo font-xl">my</span>
