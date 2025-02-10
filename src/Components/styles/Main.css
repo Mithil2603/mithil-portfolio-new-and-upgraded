@@ -11,6 +11,7 @@
     align-items: center;
     /* Vertically center content */
     justify-content: center;
+    font-family: Poppins;
 }
 
 .background-video {
@@ -188,6 +189,7 @@ hr {
     height: auto;
     padding: 2rem;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 .mt-0 {
