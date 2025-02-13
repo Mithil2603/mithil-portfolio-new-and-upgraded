@@ -4,14 +4,25 @@
     color: white;
     width: 100%;
     height: auto;
-    padding: 5rem;
+    padding: 3rem 3rem;
     box-sizing: border-box;
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .mt-3 {
     margin-top: 2rem;
+}
+
+.right-footer p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .m-auto {
+        margin: 0 auto;
+    }
 }

@@ -76,9 +76,9 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
-            <p className="mt-3">&copy; 2024 by myGoal. All rights reserved.</p>
+            <p className="mt-3">&copy; 2024 by myGoal. <br />All rights reserved.</p>
           </div>
-          <div className="right-footer">
+          <div className="right-footer m-auto">
             <p>Portfolio Links</p>
             <Link to="/" className="color-orange">Home</Link> <br />
             <Link to="/about" className="color-orange">About Me</Link> <br />

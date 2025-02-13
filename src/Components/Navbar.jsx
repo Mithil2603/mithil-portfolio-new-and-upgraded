@@ -27,7 +27,7 @@ export default function Navbar() {
   }, []);
 
   // Dynamic background: on scroll or specific routes
-  const navbarClass = `nav position-fixed top-0 z-99 ${
+  const navbarClass = `nav position-sticky top-0 z-99 ${
     isScrolled || location.pathname !== "/" ? "scrolled" : ""
   }`;
 

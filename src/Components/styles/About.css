@@ -1,11 +1,138 @@
-.main-container {
-    min-height: 100vh;
+.container-fluid {
     width: 100%;
-    background-color: #23486A;
-    color: white;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.main-container h1 {
-    padding-top: 4rem;
+.bg-black {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.main-container {
+    background-color: #23486A;
+    color: white;
+    padding: 2rem;
+}
+
+.skills,
+.why-me {
+    margin-top: 3rem;
+}
+
+.journey-content h2, .why-me h2, .faqs-section h2 {
+    font-size: 2rem;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+}
+
+.skill-group {
+    margin-bottom: 2rem;
+}
+
+.skill-group h3 {
+    font-size: 1.4rem;
+    /* color: orange; */
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.skill-group h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.skill-group:hover h3::after {
+    width: 100%;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-skill {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
     text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-skill:hover {
+    background-color: orange;
+    color: black;
+    border-color: orange;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.3);
+}
+
+.thin-hr {
+    border: 1px solid white;
+}
+
+.faqs-section {
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
+
+.faqs-section h2 {
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.faqs-subtitle {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.faqs-container {
+    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq-item {
+    padding: 1rem;
+    width: 100%;
+    background-color: #222;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.2);
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
 }
