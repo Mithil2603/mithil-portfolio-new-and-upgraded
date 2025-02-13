@@ -134,3 +134,38 @@
 .nav-link:active {
     color: orange;
 }
+
+.modal-form {
+    font-family: "Poppins";
+    border-radius: 5rem;
+    position: relative;
+    z-index: 2000;
+    top: 25%;
+    left: 0%;
+    margin: auto;
+    max-width: 60%;
+    padding: 5rem;
+    background-color: black;
+    color: white;
+}
+
+.input {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.input:focus {
+    border: 1px solid orange;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}

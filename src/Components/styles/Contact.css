@@ -1,0 +1,86 @@
+.contact-section {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+}
+
+.contact-section h1 {
+    color: orange;
+    text-align: center;
+}
+
+.contact-container {
+    background-color: rgba(169, 169, 169, 0.181);
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    width: 100%;
+    text-align: center;
+}
+
+.form-group input,
+textarea {
+    width: 80%;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+}
+
+.form-group input:focus {
+    border: 1px solid orange;
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+        width: 100%;
+    }
+
+    .form-group input,
+    textarea {
+        width: 90%;
+        overflow: hidden;
+    }
+}
+
+.error {
+    border-color: #ff4444 !important;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: #111;
+    border-radius: 15px;
+}
+
+.success-message h2 {
+    color: orange;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: white;
+    font-size: 1.1rem;
+}

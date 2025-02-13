@@ -3,9 +3,9 @@ import "./styles/Navbar.css";
 import { NavLink, Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State to manage sidebar visibility
-  const [isScrolled, setIsScrolled] = useState(false); // State to manage scroll
-  const location = useLocation(); // Get the current route
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -17,12 +17,12 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20); // Set scrolled state when scrolling beyond 20px
+      setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll); // Attach the scroll listener
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll); // Clean up listener
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -74,20 +74,37 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <ul className="d-flex gap-2 font-l hideOnMobile list-style-none justify-center align-center">
-            <NavLink to="/" className="text-decoration-none text-white d-flex align-items-center nav-link">
+            <NavLink
+              to="/"
+              className="text-decoration-none text-white d-flex align-items-center nav-link"
+            >
               <li>Home</li>
             </NavLink>
-            <NavLink to="/about" className="text-decoration-none text-white d-flex align-items-center nav-link">
+            <NavLink
+              to="/about"
+              className="text-decoration-none text-white d-flex align-items-center nav-link"
+            >
               <li>About Me</li>
             </NavLink>
-            <NavLink to="#" className="text-decoration-none text-white d-flex align-items-center nav-link">
+            <NavLink
+              to="/contact"
+              className="text-decoration-none text-white d-flex align-items-center nav-link"
+            >
               <li>Contact Me</li>
             </NavLink>
-            <NavLink to="#" className="text-decoration-none text-white d-flex align-items-center nav-link">
+            <NavLink
+              to="/"
+              className="text-decoration-none text-white d-flex align-items-center nav-link"
+            >
               <li>Projects</li>
             </NavLink>
-            <Link to="#" className="text-decoration-none text-white d-flex align-items-center nav-link">
-              <button className="btn nav-link">Hire Me</button>
+            <Link
+              to="https://api.whatsapp.com/send?phone=7041177240&text=Hello%20I%20want%20to%20hire%20you" target="_blank" rel="noopener noreferrer"
+              className="text-decoration-none text-white d-flex align-items-center nav-link"
+            >
+              <button className="btn">
+                Hire Me
+              </button>
             </Link>
           </ul>
         </div>
@@ -116,23 +133,26 @@ export default function Navbar() {
             About Me
           </NavLink>
           <NavLink
-            to="#"
+            to="/contact"
             className="text-decoration-none text-white list-style-none nav-link"
             onClick={closeSidebar}
           >
             Contact Me
           </NavLink>
           <NavLink
-            to="#"
+            to="/about"
             className="text-decoration-none text-white list-style-none nav-link"
             onClick={closeSidebar}
           >
             Projects
           </NavLink>
           <Link
-            to="#"
-            className="text-decoration-none text-white list-style-none nav-link"
-            onClick={closeSidebar}
+            to="https://api.whatsapp.com/send?phone=7041177240&text=Hello%20I%20want%20to%20hire%20you" target="_blank" rel="noopener noreferrer"
+            className="text-decoration-none text-white list-style-none"
+            onClick={(e) => {
+              e.preventDefault();
+              closeSidebar();
+            }}
           >
             <button className="btn">Hire Me</button>
           </Link>
