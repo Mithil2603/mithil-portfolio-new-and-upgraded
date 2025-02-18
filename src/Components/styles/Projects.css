@@ -1,0 +1,30 @@
+.border-box {
+    box-sizing: border-box;
+}
+
+.blue-bg {
+    background-color: #23486A;
+    margin: 0;
+}
+
+.pt-5 {
+    padding-top: 2rem;
+}
+
+.pb-5 {
+    padding-bottom: 2rem;
+}
+
+.projects {
+    font-family: "Poppins";
+}
+
+.project-img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.p-img {
+    margin: auto 0;
+}
