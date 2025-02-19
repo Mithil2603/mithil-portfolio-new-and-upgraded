@@ -64,7 +64,7 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
-            <p className="mt-3">&copy; 2024 by myGoal. <br />All rights reserved.</p>
+            <p className="mt-3">&copy; 2024 by myGoal. All rights reserved.</p>
           </div>
           <div className="right-footer m-auto">
             <p>Portfolio Links</p>
