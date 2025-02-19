@@ -99,7 +99,7 @@ export default function Navbar() {
               <li>Projects</li>
             </NavLink>
             <Link
-              to="/contact" target="_blank" rel="noopener noreferrer"
+              to="/contact"
               className="text-decoration-none text-white d-flex align-items-center nav-link"
             >
               <button className="btn">
@@ -140,17 +140,17 @@ export default function Navbar() {
             Contact Me
           </NavLink>
           <NavLink
-            to="/about"
+            to="/projects"
             className="text-decoration-none text-white list-style-none nav-link"
             onClick={closeSidebar}
           >
             Projects
           </NavLink>
           <Link
-            to="https://api.whatsapp.com/send?phone=7041177240&text=Hello%20I%20want%20to%20hire%20you" target="_blank" rel="noopener noreferrer"
+            to="/contact"
             className="text-decoration-none text-white list-style-none"
             onClick={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
               closeSidebar();
             }}
           >
