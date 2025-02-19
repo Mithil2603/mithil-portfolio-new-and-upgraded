@@ -4,6 +4,7 @@
 
 .blue-bg {
     background-color: #23486A;
+    font-family: "Poppins";
     margin: 0;
 }
 
@@ -20,11 +21,69 @@
 }
 
 .project-img {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    min-height: 5rem;
     object-fit: cover;
+}
+
+.project-img-1 {
+    width: 10rem;
+    min-height: 5rem;
+    object-fit: contain;
 }
 
 .p-img {
     margin: auto 0;
+}
+
+@media (max-width: 350px) {
+    .media {
+        font-size: 1.7em;
+    }
+}
+
+.p-fixed {
+    position: fixed;
+    top: 15vh;
+}
+
+.p-relative {
+    position: relative;
+    top: 16vh;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.mb-16vh {
+    margin-bottom: 16vh;
+}
+
+.h-50 {
+    max-height: 10rem;
+    overflow-y: scroll;
+}
+
+.h-50::-webkit-scrollbar {
+    width: 6px;
+}
+
+.h-50::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.h-50::-webkit-scrollbar-thumb {
+    background: orange;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+}
+
+.h-50::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
 }

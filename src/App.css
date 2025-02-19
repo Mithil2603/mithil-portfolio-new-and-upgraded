@@ -160,3 +160,11 @@ hr {
 .text-center {
   text-align: center;
 }
+
+.fs-small {
+  font-size: small;
+}
+
+.fs-medium {
+  font-size: medium;
+}

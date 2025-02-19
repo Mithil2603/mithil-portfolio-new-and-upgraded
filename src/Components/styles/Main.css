@@ -223,10 +223,20 @@ hr {
     flex-wrap: wrap !important;
 }
 
+.blocks-1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap !important;
+}
+
 .block1 {
     width: 30%;
     min-width: 280px; /* Prevents blocks from shrinking too much */
     padding: 0.5rem;
+    height: max-content;
     box-sizing: border-box;
 }
 
