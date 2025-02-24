@@ -178,7 +178,7 @@ export default function About() {
               Interested in working together or just want to say hi? Feel free
               to reach out.
             </p>
-            <Link href="/contact" className="btn text-decoration-none">
+            <Link to="/contact" className="btn text-decoration-none">
               Get in Touch
             </Link>
           </section>
