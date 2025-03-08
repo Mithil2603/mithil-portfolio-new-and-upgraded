@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles/About.css";
 import { Link } from "react-router-dom";
-// import pic from "./img/Picsart_25-01-25_21-14-17-386.png"
 
 export default function About() {
   return (
@@ -178,9 +177,19 @@ export default function About() {
               Interested in working together or just want to say hi? Feel free
               to reach out.
             </p>
-            <Link to="/contact" className="btn text-decoration-none">
-              Get in Touch
-            </Link>
+            <div className="d-flex gap-1">
+              <Link to="/contact" className="btn text-decoration-none">
+                Get in Touch
+              </Link>
+              <a
+                href="https://drive.google.com/file/d/1DLgZqOPqHLSHnhfC7yKI4LWtOywRIA6n/view"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn text-decoration-none"
+              >
+                View Resume
+              </a>
+            </div>
           </section>
         </div>
       </div>
