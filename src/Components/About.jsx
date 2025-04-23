@@ -95,12 +95,12 @@ export default function About() {
           <section className="why-me">
             <h2 className="color-orange">Why Work With Me?</h2>
             <ul>
-              <li>🔥 Passionate about modern web technologies</li>
-              <li>
+              <li className="pb-2">🔥 Passionate about modern web technologies</li>
+              <li className="pb-2">
                 🚀 Focused on building high-performance, scalable applications
               </li>
-              <li>🎨 Strong eye for UI/UX design and user experience</li>
-              <li>💡 Always learning and keeping up with the latest trends</li>
+              <li className="pb-2">🎨 Strong eye for UI/UX design and user experience</li>
+              <li className="pb-2">💡 Always learning and keeping up with the latest trends</li>
             </ul>
           </section>
 
