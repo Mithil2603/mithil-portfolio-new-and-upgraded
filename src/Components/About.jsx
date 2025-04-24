@@ -182,7 +182,7 @@ export default function About() {
                 Get in Touch
               </Link>
               <a
-                href="https://drive.google.com/file/d/1DLgZqOPqHLSHnhfC7yKI4LWtOywRIA6n/view"
+                href="https://drive.google.com/file/d/14ysNxfVVo7TuAh_CRunnutgS75E4X5c_/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn text-decoration-none"
