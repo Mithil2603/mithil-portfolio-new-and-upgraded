@@ -70,8 +70,8 @@ export default function Footer() {
             <p>Portfolio Links</p>
             <Link to="/" className="color-orange">Home</Link> <br />
             <Link to="/about" className="color-orange">About Me</Link> <br />
-            <Link to="/" className="color-orange">Contact Me</Link> <br />
-            <Link to="/" className="color-orange">Projects</Link> <br />
+            <Link to="/contact" className="color-orange">Contact Me</Link> <br />
+            <Link to="/projects" className="color-orange">Projects</Link> <br />
           </div>
         </div>
       </footer>
